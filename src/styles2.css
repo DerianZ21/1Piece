@@ -1,0 +1,276 @@
+html {
+    scroll-behavior: smooth;
+}
+
+html:hover {
+    transition-property: all;
+    transition-duration: 5s;
+}
+
+/* secciones */
+header {
+    color: white;
+    height: 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: local;
+    top: 0;
+    left: 0;
+}
+
+main {
+    background-color: white;
+    height: 100%;
+    width: 90%;
+    margin: 10px auto -15px auto;
+
+}
+
+
+/* contenedores */
+body {
+    background: url("https://www.xtrafondos.com/descargar.php?id=4011&resolucion=2560x1440") no-repeat fixed 50% 50%;
+    background-size: 100% auto;
+}
+
+#contenido {
+    width: 90%;
+    margin: auto;
+}
+
+
+#tribute-info {
+    align-self: center;
+    margin: 0 24% 0 24%;
+
+}
+
+#frase {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 12px;
+    text-align: center;
+}
+
+#nombre {
+    font-size: 14px;
+    text-align: right;
+    margin-top: -10px;
+}
+
+#img-div {
+    background-color: #dfdfe2;
+    display: block;
+    height: 100%;
+    width: 95%;
+    margin: auto;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+
+#contenedorTema {
+    padding-top: 15px;
+}
+
+#piePag {
+    height: 40px;
+    width: 100%;
+    background-color: #34566d;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+
+#piePag p {
+    padding-top: 10px;
+}
+
+#piePag p a {
+    color: white;
+    text-decoration: none;
+}
+
+#piePag p a:hover {
+    color: orange;
+    text-decoration: underline solid orange;
+
+}
+
+
+.secciones {
+    width: 95%;
+    margin: auto;
+}
+
+#atajos {
+    position: absolute;
+    right: 0;
+    padding: 0 25px 0 0;
+}
+
+.temaSecciones {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+#img-caption {
+    text-align: center;
+    font-family: Tahoma, Geneva, sans-serif;
+    transition-duration: 1s;
+    font-size: 0px;
+    height: 0px;
+}
+
+/* elementos */
+#title {
+    font-family: "Lucida Console", Monaco, monospace;
+    color: white;
+    font-size: 15px;
+}
+
+#logo {
+    height: 30px;
+    width: 30px;
+    padding: 0 0 0 25px;
+}
+
+#tema {
+    text-align: center;
+    width: 65%;
+    font-family: "Lucida Console", Monaco, monospace;
+    font-size: 45px;
+    letter-spacing: -1px;
+    word-spacing: 0.2px;
+    border-bottom: 2px solid gray;
+    margin: auto;
+    padding: 10px;
+}
+
+#figura {
+    margin: auto;
+    max-width: 700px;
+    transition-property: max-width, -webkit-box-shadow, box-shadow;
+    transition-duration: 1s;
+    background-color: white;
+}
+
+#image {
+    display: block;
+    height: auto;
+    max-width: 100%;
+    align-items: center;
+    filter: grayscale(0.8);
+    transition-property: filter, max-width;
+    transition-duration: 1s;
+    margin: auto;
+}
+
+#figura:hover {
+    max-width: 750px;
+    -webkit-box-shadow: 0px 2px 20px 1px #000000;
+    box-shadow: 0px 2px 20px 1px #000000;
+}
+
+#figura:hover #img-caption {
+    font-family: "Courier New", Courier, monospace;
+    display: block;
+    align-items: center;
+    margin: auto;
+    text-align: center;
+    font-size: 13px;
+    height: 20px;
+    font-weight: bold;
+}
+
+#figura:hover #image {
+    filter: grayscale(0);
+    max-width: 100%;
+    font-size: 12px;
+}
+
+
+.informacionPersonaje {
+    max-width: 70%;
+    margin: auto;
+    display: flex;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: left;
+    transition-property: background-color;
+    transition-duration: 1s;
+}
+
+.informacionPersonaje:hover {
+    background: #dfdfe2;
+}
+
+.informacionPersonaje p,
+.informacionPersonaje,
+.informacionEvento,
+.informacionEvento p {
+    padding: 10px 20px;
+}
+
+.imgMugiwara {
+    height: 75px;
+    width: 75px;
+    margin: auto;
+}
+
+.informacionEvento {
+    text-align: left;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    transition-property: background-color;
+    transition-duration: 1s;
+}
+
+.informacionEvento:hover {
+    background-color: #dfdfe2;
+}
+
+.imgEvento {
+    display: block;
+    height: 250px;
+    width: 375px;
+    margin: auto;
+    object-fit: cover;
+}
+
+#atajos>ul {
+    display: flex;
+    align-items: center;
+    padding-inline-start: 0;
+    margin-block: 0;
+    height: 100%;
+}
+
+
+#atajos>ul>li {
+    color: #dfdfe2;
+    display: flex;
+    padding: 10px;
+    transition-property: background-color;
+    transition-duration: 0.75s;
+}
+
+#atajos>ul>li:hover {
+    background-color: #1C6EA4;
+}
+
+#atajos>ul>li>a:active {
+    background-color: white;
+    color: black;
+}
+
+li a {
+    font-family: "Lucida Console", Monaco, monospace;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.imgMugiwara,
+.imgEvento {
+    -webkit-box-shadow: 0px 2px 20px 1px #000000;
+    box-shadow: 0px 2px 20px 1px #000000;
+}
